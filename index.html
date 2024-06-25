@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Perguntas e Respostas</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #00BBC9;
+        }
+
+        #quiz-container {
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 500px;
+            text-align: center;
+        }
+
+        #quiz-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        .options {
+            list-style: none;
+            padding: 0;
+        }
+
+        .options li {
+            margin-bottom: 10px;
+        }
+
+        .options li button {
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background: #007BFF;
+            color: white;
+        }
+
+        #next-btn {
+            display: none;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background: #28A745;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <h2>Quiz de perguntas e respostas</h2>
+        <div class="question">Quem veio primeiro</div>
+        <ul class="options"> 1 - Ovo</ul>
+        <ul class="options"> 2 - Galinha</ul>
+        <button id="next-btn">Próxima pergunta</button>
+    </div>
+</body>
+</html>
